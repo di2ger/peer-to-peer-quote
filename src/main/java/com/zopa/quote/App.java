@@ -31,9 +31,12 @@ public class App {
 			System.out.println("Description: " + e.getMessage());
 			System.exit(1);
 		}
-		
-		Quote quote = calc.getQuote(loanAmount, DEFAULT_TERM, offers);
-		System.out.println(quote.toString());
+		try {
+			Quote quote = calc.getQuote(loanAmount, DEFAULT_TERM, offers);
+			System.out.println(quote.toString());
+		} catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+		}
 
 	}
 	
