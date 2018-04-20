@@ -36,6 +36,7 @@ public class App {
 			System.out.println(quote.toString());
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
+			System.exit(1);
 		}
 
 	}
