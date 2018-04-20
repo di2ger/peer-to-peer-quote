@@ -9,7 +9,7 @@ import java.util.List;
 
 public class App {
 	
-	private static final String USAGE = "Usage: quote.sh <market_file> <loan_amount>";
+	private static final String USAGE = "Usage: java -jar peer-to-peer-quote.jar <market_file> <loan_amount>";
 	private static final BigDecimal minLoanAmount = new BigDecimal("1000");
 	private static final BigDecimal maxLoanAmount = new BigDecimal("15000");
 	
